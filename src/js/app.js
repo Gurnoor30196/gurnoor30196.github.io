@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   particlesJS('particles-js', {
     "particles": {
       "number": {
-        "value": 30,
+        "value": 400,
         "density": {
           "enable": true,
           "value_area": 800
@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "value": "#ffffff"
       },
       "shape": {
-        "type": "polygon",
+        "type": "circle",
         "stroke": {
           "width": 0,
           "color": "#000000"
         },
         "polygon": {
-          "nb_sides": 5
+          "nb_sides": 3
         },
         "image": {
           "src": "img/github.svg",
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       "opacity": {
         "value": 0.5,
-        "random": false,
+        "random": true,
         "anim": {
           "enable": false,
           "speed": 1,
@@ -41,27 +41,27 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "size": {
-        "value": 3,
+        "value": 25,
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 19.18081918081918,
+          "speed": 40,
           "size_min": 0.1,
           "sync": false
         }
       },
       "line_linked": {
-        "enable": true,
-        "distance": 150,
+        "enable": false,
+        "distance": 500,
         "color": "#ffffff",
         "opacity": 0.4,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 4,
-        "direction": "none",
-        "random": true,
+        "speed": 6,
+        "direction": "bottom",
+        "random": false,
         "straight": false,
         "out_mode": "out",
         "bounce": false,
@@ -74,15 +74,15 @@ document.addEventListener("DOMContentLoaded", function () {
       nb: 80
     },
     "interactivity": {
-      "detect_on": "window",
+      "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false,
-          "mode": "grab"
+          "enable": true,
+          "mode": "bubble"
         },
         "onclick": {
           "enable": true,
-          "mode": "push"
+          "mode": "repulse"
         },
         "resize": true
       },
@@ -95,8 +95,8 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         "bubble": {
           "distance": 400,
-          "size": 40,
-          "duration": 2,
+          "size": 4,
+          "duration": 0.3,
           "opacity": 8,
           "speed": 3
         },
