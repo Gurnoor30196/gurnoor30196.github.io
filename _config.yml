@@ -1,8 +1,8 @@
 # Site settings
 title: Gurnoor Singh
 description: A blog about lorem ipsum dolor sit amet
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
- url: "http://gurnoor.me/particle/"
+baseurl: "/particle" # the subpath of your site, e.g. /blog
+url: "http://gurnoor.me/particle/"
 
 # User settings
 username: Gurnoor Singh
